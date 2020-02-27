@@ -6,7 +6,7 @@ A webpack tool for Shopify themes. Taking inspiration from Shopify Slate 1.x. - 
 
 1. Install dependencies - `yarn install`
 
-2. Add your theme src files to `/src/`. See the [example src config](https://github.com/switchthemes/webpack-shopify/tree/master/__src-examples) for SASS, Javascript and Icons
+2. Add your theme src files to `/src/`. See the [example src folder](https://github.com/switchthemes/webpack-shopify/tree/master/__src-examples) for SASS, Javascript and Icons
 
 3. Rename `.store.dev.example` to `.store.dev` and fill out your store credentials
 
