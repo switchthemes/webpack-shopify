@@ -14,16 +14,12 @@ A webpack tool for Shopify themes. Taking inspiration from Shopify Slate 1.x. - 
 
 # Commands
 
-Dev - starts a webpack dev server, proxies your shopify store\
-`yarn dev`\
-`yarn dev --watch` - this will skip deploy process\
+Dev - starts a webpack dev server, proxies your shopify store
 
-Build - builds your theme for deployment and creates a zip file\
+`yarn dev`\
+`yarn dev --watch` - this will skip deploy process
+
+Build - builds your theme for deployment and creates a zip file
+
 `yarn build`
 
-# Features
-## Development
-- Starts 
-## Build
-- Uses Shopify CSSVar Loader for CSS variables
-- Zips theme using theme schema name + version
