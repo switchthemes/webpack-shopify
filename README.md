@@ -42,7 +42,7 @@ Any `svg` icons added to `/src/icons/` will go through SVGO and then transformed
 As a future proof for `render` over `include`. You can use `{% require 'file' %}` to include liquid files from the `/includes/` directory before they are uploaded to Shopify. This is useful if you use Shopify's `include' function to import global liquid variables.
 
 ## Build
-Build will 
+Webpack will build your theme for deployment and split out the CSS and JS files (it will also include an unminified JS file). Webpack will also create a zip file using the Theme Name and Theme Version from the theme schema. 
 
 ## Environments
 Default environment is `.store.dev`. Add any additional environments as another store file e.g. `.store.prod`. By default scripts will run using `dev` as default store. To overwrite this set it in the command e.g. `yarn dev --store=prod`
