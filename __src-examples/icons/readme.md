@@ -1,0 +1,1 @@
+Export .svg files into this folder and they'll be automatically converted to snippets.
