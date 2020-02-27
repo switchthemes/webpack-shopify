@@ -32,27 +32,8 @@
     <meta name="description" content="{{ page_description | escape }}">
   {% endif %}
 
-  {% include 'social-meta-tags' %}
   {% include 'style-tags' %}
 
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-
-    window.theme = {
-      data: {
-        "cartMethod": "{{ settings.ajax_cart_method }}"
-      },
-      strings: {
-        addToCart: {{ 'products.product.add_to_cart' | t | json }},
-        soldOut: {{ 'products.product.sold_out' | t | json }},
-        unavailable: {{ 'products.product.unavailable' | t | json }},
-        cartEmpty: {{ 'cart.general.empty' | t | json }},
-        cartCookie: {{ 'cart.general.cookies_required' | t | json }},
-        cartSavings: {{ 'cart.general.savings_html' | t: price: '[savings]' | json }}
-      },
-      moneyFormat: {{ shop.money_format | json }}
-    };
-  </script>
 
   {% if template.directory == 'customers' %}
     <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script><!--<![endif]-->
@@ -60,7 +41,7 @@
   {% endif %}
 
   {% include 'css-variables' %}
-  {% include 'script-tags', layout: 'theme' %}
+  {% include 'script-tags' %}
   {{ content_for_header }}
   
 </head>
