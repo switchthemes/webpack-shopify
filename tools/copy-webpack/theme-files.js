@@ -25,7 +25,7 @@ folders.forEach(function (folder) {
 });
 
 let svgConfig = {
-  from: path.resolve(__dirname, '../../src/icons'),
+  from: path.resolve(__dirname, '../../src/icons/*.svg'),
   to: path.resolve(__dirname, '../../dist/snippets/[name].liquid'),
   transform(content, path) {
     return SvgTransform(content, path);
