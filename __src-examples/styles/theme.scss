@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*============================================================================
+  Cascade | Built with Slate
+    - You cannot use native CSS/Sass @imports in this file without a build script
+==============================================================================*/
+
+$color-primary-background: var(--color_primary_background);
+
+body {
+  background-color: blue;
+  font-size: 2em;
+  color: pink;
+}
+

@@ -1,0 +1,9 @@
+<style>
+
+/* All liquid above :root will be wrapped to top of css file in build */
+{% assign foo = 'bar' %}
+
+:root {
+  --color_primary_background: {{ settings.color_primary_background }};
+}
+</style>

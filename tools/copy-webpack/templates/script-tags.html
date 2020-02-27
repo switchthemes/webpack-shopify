@@ -1,0 +1,23 @@
+<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+
+  <% var basename = htmlWebpackPlugin.files.chunks[chunk].entry.split('/').reverse()[0]; %>
+
+  <% if (htmlWebpackPlugin.options.env === 'production') { %>
+
+    <% var src = `{{ '${basename}' | asset_url }}` %>
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="<%= src %>" defer="defer"></script><!--<![endif]-->
+    <!--[if lt IE 9]><script src="<%= src %>"></script><![endif]-->
+  
+  
+  <% } else { %>
+    <% var src = htmlWebpackPlugin.files.chunks[chunk].entry %>
+    <% var host = htmlWebpackPlugin.options.host %>
+    <% var port = htmlWebpackPlugin.options.port %>
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="https://<%= host %>:<%= port %>/assets/<%= basename %>" defer="defer"></script><!--<![endif]-->
+  <!--[if lt IE 9]><script src="https://<%= host %>:<%= port %>/assets/<%= basename %>"></script><![endif]-->
+  <% } %>
+
+<% } %>
+
+
+
