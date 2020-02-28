@@ -5,12 +5,16 @@ const liquidRequire = require('./liquid-require');
 const copyWebpackArray = [];
 const folders = [
 	'assets',
-	'config',
+  'config',
+  'content',
+	'frame',
 	'layout',
   'locales',
+  'pages',
   'sections',
   'snippets',
-  'templates'
+  'templates',
+  'templates/customers',
 ];
 
 folders.forEach(function (folder) {
