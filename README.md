@@ -35,6 +35,8 @@ Once this is up and running HMR will be working for SASS.
 ## CSS Variables
 This uses the CSS Var Loader that was in Slate 1.x. When you build your theme, SASS Variables will be replaced by matching Liquid variables. You can also add any Liquid statements above `:root` in the css-variables.liquid file and they will be moved across. 
 
+See the example [snippets/css-variables.liquid](https://github.com/switchthemes/webpack-shopify/blob/master/__src-examples/snippets/css-variables.liquid) file.
+
 ## Icons
 Any `svg` icons added to `/src/icons/` will go through SVGO and then transformed into snippets.
 
