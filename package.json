@@ -45,7 +45,7 @@
     "http-proxy-middleware": "^1.0.0",
     "inquirer": "^7.0.4",
     "ip": "^1.1.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.1",
     "raw-loader": "^4.0.0",
     "sass-loader": "^8.0.2",
